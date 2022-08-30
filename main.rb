@@ -17,7 +17,7 @@ def check_args(arg0, arg1)
 end
 
 def compose_filename(query, page)
-  "#{query}_page_#{page}.txt"
+  "#{query.downcase.gsub(/\s/, '')}_page_#{page}.txt"
 end
 
 def save_to_file(data, query, page)
