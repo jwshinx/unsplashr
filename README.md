@@ -19,5 +19,6 @@ gem install httparty
 Provide arguments - query string and page number.
 
 ```bash
+mkdir data
 ruby main.rb "half dome" 1
 ```
